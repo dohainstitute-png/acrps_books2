@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كتب المركز العربي - رمز الاستجابة السريعة</title>
+    
+    <!-- تضمين مكتبة Tailwind CSS للتصميم -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- إعدادات إضافية للتصميم -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+            /* خلفية متدرجة أنيقة */
+            background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+        }
+        
+        /* تأثير حركي خفيف لرمز الـ QR عند التحويم */
+        .qr-container {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .qr-container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <!-- الحاوية الرئيسية للبطاقة -->
+    <div class="bg-white w-full max-w-sm rounded-3xl shadow-xl overflow-hidden p-8 border border-gray-100 text-center">
+        
+        <!-- قسم صورة البروفايل -->
+        <div class="flex justify-center relative mb-4">
+            <div class="w-28 h-28 rounded-full p-1 bg-gradient-to-tr from-gray-300 to-gray-100 shadow-md">
+                <img 
+                    src="https://scontent.fdoh9-1.fna.fbcdn.net/v/t39.30808-6/688347952_26892547023732246_3068015957053943412_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=MAar9dO4xgYQ7kNvwFlIhuH&_nc_oc=Adp37f4HXz2EZweSRpsqD4Gwxrxm0pIqD_oxw30jSkda140FM4_484X0elbcq1j6tMY&_nc_zt=23&_nc_ht=scontent.fdoh9-1.fna&_nc_gid=kp6y-kWLnCIaOy1E1tEkcA&_nc_ss=7a2a8&oh=00_Af56azdcF3yNf_tP2uxkuoE71rzIsvioP3GTsfUVWmyA2A&oe=69FE85C4" 
+                    alt="صورة بروفايل كتب المركز العربي" 
+                    class="w-full h-full rounded-full object-cover border-2 border-white"
+                >
+            </div>
+        </div>
+
+        <!-- النصوص والوصف -->
+        <div class="mb-6">
+            <h1 class="text-2xl font-bold text-gray-800 mb-2">كتب المركز العربي</h1>
+            <p class="text-gray-500 text-sm font-medium">امسح رمز الاستجابة السريعة (QR Code) أدناه للوصول إلى جميع منصاتنا وحساباتنا الرسمية.</p>
+        </div>
+
+        <!-- عرض رمز الـ QR -->
+        <div class="flex justify-center my-6">
+            <div class="qr-container p-4 bg-gray-50 rounded-2xl border-2 border-gray-100 inline-block">
+                <!-- تم وضع صورة الـ QR Code الصحيحة والمحدثة هنا -->
+                <img 
+                    src="https://pbs.twimg.com/media/HHivzAkXcAY6HF4?format=png&name=small" 
+                    alt="امسح الرمز للوصول لحساباتنا" 
+                    class="w-48 h-48 object-contain rounded-lg"
+                >
+            </div>
+        </div>
+        
+        <!-- رسالة توجيهية إضافية -->
+        <div class="mt-4 bg-blue-50 text-blue-700 p-3 rounded-xl text-sm font-medium">
+            <i class="fa-solid fa-camera mr-1"></i>
+            وجّه كاميرا هاتفك نحو الرمز
+        </div>
+
+        <!-- تذييل الصفحة -->
+        <div class="mt-8 text-center">
+            <p class="text-xs text-gray-400">© 2026 المركز العربي للأبحاث ودراسة السياسات</p>
+        </div>
+
+    </div>
+
+    <!-- تضمين مكتبة FontAwesome لأيقونة الكاميرا -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</body>
+</html>
